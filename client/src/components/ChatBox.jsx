@@ -1,7 +1,7 @@
 import React from 'react';
 import { Avatar, Image, message } from 'antd';
 
-export default function ChatBoxReciever({ avatar, user, message }) {
+const ChatBoxReciever = ({ avatar, user, message }) => {
   return (
     <div style={{display:'flex', justifyContent: 'flex-start', flexDirection: 'row'}}>
         <Avatar 
@@ -28,7 +28,7 @@ export default function ChatBoxReciever({ avatar, user, message }) {
   )
 }
 
-export function ChatBoxSender({ avatar, user, message }) {
+const ChatBoxSender = ({ avatar, user, message }) => {
     return (
       <div style={{display:'flex', justifyContent: 'flex-end', flexDirection: 'row'}}>
           <Avatar 
@@ -54,3 +54,5 @@ export function ChatBoxSender({ avatar, user, message }) {
       </div>
     )
   }
+
+  export { ChatBoxReciever, ChatBoxSender }
