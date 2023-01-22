@@ -55,4 +55,4 @@ const ChatBoxSender = ({ avatar, user, message }) => {
     )
   }
 
-  export { ChatBoxReciever, ChatBoxSender }
+  export { ChatBoxReciever, ChatBoxSender };

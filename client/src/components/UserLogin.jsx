@@ -46,4 +46,4 @@ const [user, setAUser] = useState("");
   )
 }
 
-export default UserLogin
+export default UserLogin;
