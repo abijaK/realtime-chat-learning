@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-import socketIOClient from 'socket.io'
+import socketIOClient from 'socket.io-client'
 import { ChatBoxReciever, ChatBoxSender } from './ChatBox';
+import InputText from './InputText';
+import UserLogin from './UserLogin';
 
 export default function ChatContainer() {
 
-let socketio = socketIOClient('http://localhost:5001')
+let socketio = socketIOClient('http://localhost:5001');
 const [chats, setChats] = useState([]);
 const [user, setUser] = useState('user');
 const [avatar, setAvatar] = useState(localStorage.getItem('avatar'));
